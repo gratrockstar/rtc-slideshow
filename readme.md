@@ -8,7 +8,7 @@ License:           GPL-2.0-or-later\
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
 A slideshow block that will pull data from an external WP REST Api endpoint.
-Without being able to ask clarifying questions, this is how I interpreted the instructions for the assignment.
+Without being able to ask clarifying questions, this is how I interpreted the instructions for the assignment.  I've created an admin un/pw for rtCamp to check out the backend, but not sure how to get it to you.  Please ask for access.
 This block uses a custom WP REST Api endpoint to pull in and cache data from the external source.
 The block settings contain a field for the base URL to use to pull in the external data.
 
