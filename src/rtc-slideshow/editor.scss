@@ -1,0 +1,34 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-rtc-slideshow {
+
+	.components-spinner {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.slideshow-container {
+
+		.slide {
+
+			.image {
+				position: relative;
+
+				&:before {
+					position: absolute;
+					content: '';
+					z-index: 1;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+				}
+			}
+		}
+	}
+}

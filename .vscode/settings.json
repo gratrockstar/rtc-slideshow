@@ -1,0 +1,16 @@
+{
+	"[scss]": {
+		"editor.formatOnSave": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.stylelint": true
+		}
+	},
+	"[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.useTabStops": false
+	},
+	"[json]": {
+			"editor.formatOnSave": false
+	}
+}
