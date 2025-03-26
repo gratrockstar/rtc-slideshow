@@ -7,7 +7,7 @@ return array(
 		'name' => 'create-block/rtc-slideshow',
 		'version' => '0.1.0',
 		'title' => 'Rtc Slideshow',
-		'category' => 'widgets',
+		'category' => 'rtc-slideshow',
 		'icon' => 'smiley',
 		'description' => 'Example block scaffolded with Create Block tool.',
 		'example' => array(

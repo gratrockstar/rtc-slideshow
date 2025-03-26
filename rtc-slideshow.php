@@ -20,11 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
+ *Register the blocks in this plugin.
  *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ * @return void
+ * @author Garrett Baldwin
+ * @since  1.0.0
  */
 function create_block_rtc_slideshow_block_init() {
 	if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) { // Function introduced in WordPress 6.8.
@@ -38,8 +38,27 @@ function create_block_rtc_slideshow_block_init() {
 			register_block_type( __DIR__ . "/build/{$block_type}" );
 		}
 	}
+	add_filter( 'block_categories_all', __NAMESPACE__ . '\rtc_slideshow_custom_block_category', 10, 2 );
 }
 add_action( 'init', __NAMESPACE__ . '\create_block_rtc_slideshow_block_init' );
+
+/**
+ * Adds custom block categories.
+ *
+ * @return array Array of block categories.
+ * @author Garrett Baldwin
+ * @since  1.0.0
+ */
+function rtc_slideshow_custom_block_category( $categories ) {
+	array_unshift(
+		$categories,
+		[
+			'slug'  => 'rtc-slideshow',
+			'title' => __( 'RTC Blocks', 'rtc-slideshow' ),
+		]
+	);
+	return $categories;
+}
 
 /**
  * Registers the Slideshow endpoint.

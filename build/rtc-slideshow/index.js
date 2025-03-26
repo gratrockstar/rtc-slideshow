@@ -284,7 +284,7 @@ function _unsupportedIterableToArray(r, a) {
   \**************************************/
 /***/ (function(module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/rtc-slideshow","version":"0.1.0","title":"Rtc Slideshow","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"interactivity":true,"html":false},"textdomain":"rtc-slideshow","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScriptModule":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/rtc-slideshow","version":"0.1.0","title":"Rtc Slideshow","category":"rtc-slideshow","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"interactivity":true,"html":false},"textdomain":"rtc-slideshow","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScriptModule":"file:./view.js"}');
 
 /***/ }),
 
@@ -660,9 +660,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * Every block starts by registering a new block type definition.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ * Register block type.
  */
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_5__.name, {
   // eslint-disable-next-line @wordpress/i18n-text-domain

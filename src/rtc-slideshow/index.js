@@ -6,9 +6,7 @@ import save from './save';
 import metadata from './block.json';
 
 /**
- * Every block starts by registering a new block type definition.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ * Register block type.
  */
 registerBlockType(metadata.name, {
 	// eslint-disable-next-line @wordpress/i18n-text-domain
