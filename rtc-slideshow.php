@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- *Register the blocks in this plugin.
+ * Register the blocks in this plugin.
  *
  * @return void
  * @author Garrett Baldwin
@@ -43,9 +43,10 @@ function create_block_rtc_slideshow_block_init() {
 add_action( 'init', __NAMESPACE__ . '\create_block_rtc_slideshow_block_init' );
 
 /**
- * Adds custom block categories.
+ * Adds custom block category.
  *
- * @return array Array of block categories.
+ * @param array $categories  Array of block categories.
+ * @return array Updated array of block categories.
  * @author Garrett Baldwin
  * @since  1.0.0
  */
